@@ -8,6 +8,7 @@
     <setting id="debug" type="bool" label="Enable Add-on Debugging" default="false"/>
     <setting id="1080pquality" label="Play 1080p video ON demand if available (Not live)" type="bool" default=""/>
     <setting id="genesisorpulsar" type="enum" values="Genesis|Pulsar" label="Play IMDBid with:" default="Genesis"/>
+
     <setting id="donotshowbychannels" label="Do Not show items under channel name" type="bool" default="false"/>
     
     <setting id="parentalblockedpin" label="Parental Block Pin" type="text"  option="hidden"  default=""/>
@@ -22,6 +23,8 @@
     <setting type="action" label="Add Source" option="close" action="RunPlugin(plugin://plugin.video.live.streamspro/?mode=7)" />
     <setting type="sep" />
     <setting id="searchotherplugins" label="Search Other plugins" type="bool" default="false"/>
+    <setting id="Urlsolvervsgensis" type="enum" values="Urlsolver|Genesis" label="Stream FileLocker site with:" default="Urlsolver"/>
+    <setting id="YoutubedlALT" type="enum" values="plugin|module" label="Change to youtubedl module if plugin dont work" default="plugin"/>    
   </category>
 
   <category label=".xml Database">
@@ -31,5 +34,9 @@
   <category label="Community Files">
     <setting id="browse_community" type="bool" label="Browse and play from Community Files" default="false"/>
     <setting type="action" label="Add Community File URL as Source" option="close" action="Container.Update(plugin://plugin.video.live.streamspro/?mode=10)" />
+    <setting id="SDaddonfolder" type="folder" label="Sportsdevil installtion folder(Home >> addons )" default="" />
+      
+      
+  
   </category>
 </settings>
